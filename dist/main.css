@@ -1,7 +1,25 @@
-body {
-  border: 50px solid black;
+.header-nav {
+  display: none;
 }
 
-body {
-  background-color: salmon !important;
+.header-burger {
+  display: none;
 }
+
+.aspect:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: var(--aspect);
+}
+.aspect > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+/*.section-background iframe {
+    filter: sepia(0.7) hue-rotate(180deg);
+}*/

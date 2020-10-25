@@ -1,3 +1,11 @@
 {
-    "compile-hero.disable-compile-files-on-did-save-code": false
+    "compile-hero": {
+        "disable-compile-files-on-did-save-code": false,
+        "notification-toggle": false,
+        "javascript-output-directory": "./dist",
+        "javascript-output-toggle": true,
+        "scss-output-directory": "./dist",
+        "scss-output-toggle": true,
+        "ignore": ["scss/**", "src/test.js", "*/test.scss", "**/spec/*", "**/src/**/*"],
+      }
 }

@@ -1,5 +1,6 @@
-@import 'header.scss';
+@import 'scss/header.scss'; 
+@import 'scss/modelViewer.scss'; 
 
-body{
-    background-color: salmon !important;
-}
+/*.section-background iframe {
+    filter: sepia(0.7) hue-rotate(180deg);
+}*/
