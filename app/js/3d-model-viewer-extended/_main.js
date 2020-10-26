@@ -9,6 +9,7 @@ const mutationObserver = new MutationObserver((mutations) => {
   })
 })
 
+console.log("ModelViewerExtended")
 let focusedForm
 
 const init = () => {
