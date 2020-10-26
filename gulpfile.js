@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var cssnano = require('gulp-cssnano'); 
 var sass = require('gulp-sass'); 
 var concat = require('gulp-concat'); 
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 
 gulp.task('sass', function(){    
     return gulp.src('app/style.scss')       
@@ -12,7 +12,7 @@ gulp.task('sass', function(){
 });
 
 gulp.task('js', function(){    
-    return gulp.src(['app/js/*.js', 'app/*.js'])          
+    return gulp.src(['app/js/**/*.js', 'app/*.js'])          
         .pipe(concat('main.js'))       
         .pipe(uglify())       
         .pipe(gulp.dest('dist')); 
